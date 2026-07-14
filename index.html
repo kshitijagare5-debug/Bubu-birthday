@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Project Stardust ∞</title>
+
+<meta name="theme-color" content="#050816">
+
+<meta name="description"
+content="A cinematic birthday universe for My Baby.">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===================================== -->
+<!-- LOADER -->
+<!-- ===================================== -->
+
+<div id="loader">
+
+<div class="loaderStars"></div>
+
+<div class="loaderGlow"></div>
+
+<div class="loaderHeart">
+❤️
+</div>
+
+<h1>
+Project Stardust
+</h1>
+
+<p>
+Preparing your universe...
+</p>
+
+<div class="loadingBar">
+
+<div id="loadingProgress"></div>
+
+</div>
+
+</div>
+
+<!-- ===================================== -->
+<!-- SPACE BACKGROUND -->
+<!-- ===================================== -->
+
+<div id="spaceBackground">
+
+<canvas id="starCanvas"></canvas>
+
+<div class="nebula nebulaOne"></div>
+
+<div class="nebula nebulaTwo"></div>
+
+<div class="aurora"></div>
+
+<div id="floatingHearts"></div>
+
+<div id="shootingStars"></div>
+
+</div>
+
+<!-- ===================================== -->
+<!-- MUSIC -->
+<!-- ===================================== -->
+
+<button id="musicToggle"
+aria-label="Toggle Music">
+
+<i class="fa-solid fa-music"></i>
+
+</button>
+
+<audio
+id="bgMusic"
+loop>
+
+<source
+src="music/stardust.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<!-- ===================================== -->
+<!-- HERO -->
+<!-- ===================================== -->
+
+<section id="hero">
+
+<div class="heroGlass">
+
+<span class="heroTag">
+
+✨ PROJECT STARDUST ∞
+
+</span>
+
+<h1>
+
+Somewhere
+
+<span>
+
+Among The Stars
+
+</span>
+
+Someone Beautiful
+
+Was Born ❤️
+
+</h1>
+
+<p>
+
+Every star shines...
+
+but today,
+
+the universe celebrates
+
+only one.
+
+</p>
+
+<h2>
+
+28 JULY
+
+</h2>
+
+<button id="startJourney">
+
+Begin The Journey
+
+<i class="fa-solid fa-arrow-down"></i>
+
+</button>
+
+</div>
+
+<div class="scrollIndicator">
+
+<span></span>
+
+</div>
+
+</section>
+
+<!-- COUNTDOWN STARTS BELOW -->
+
+  <!-- ===================================== -->
+<!-- COUNTDOWN -->
+<!-- ===================================== -->
+
+<section id="countdownSection">
+
+<div class="container">
+
+<div class="sectionHeading">
+
+<span>⏳ COUNTDOWN</span>
+
+<h2>
+
+Every Second
+
+<strong>Brings Me Closer</strong>
+
+</h2>
+
+<p>
+
+Every passing second brings us one step closer
+to celebrating your special day.
+
+</p>
+
+</div>
+
+<div class="countdownGrid">
+
+<div class="timeCard">
+
+<h1 id="days">00</h1>
+
+<span>Days</span>
+
+</div>
+
+<div class="timeCard">
+
+<h1 id="hours">00</h1>
+
+<span>Hours</span>
+
+</div>
+
+<div class="timeCard">
+
+<h1 id="minutes">00</h1>
+
+<span>Minutes</span>
+
+</div>
+
+<div class="timeCard">
+
+<h1 id="seconds">00</h1>
+
+<span>Seconds</span>
+
+</div>
+
+</div>
+
+<p
+id="countdownQuote"
+class="countdownQuote">
+
+Every heartbeat whispers...
+
+"She's worth waiting for."
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- MEMORY GALAXY -->
+<!-- ===================================== -->
+
+<section id="memoryGalaxy">
+
+<div class="container">
+
+<div class="sectionHeading">
+
+<span>📸 MEMORY GALAXY</span>
+
+<h2>
+
+Moments
+
+<strong>Frozen Forever</strong>
+
+</h2>
+
+<p>
+
+Every memory tells a story.
+
+Tap a picture and relive
+our beautiful moments.
+
+</p>
+
+</div>
+
+<div class="memoryGrid">
+
+<div class="memoryCard">
+
+<img src="assets/images/memories/memory1.jpg" alt="Memory 1">
+
+<div class="memoryOverlay">
+
+<h3>First Smile ❤️</h3>
+
+</div>
+
+</div>
+
+<div class="memoryCard">
+
+<img src="assets/images/memories/memory2.jpg" alt="Memory 2">
+
+<div class="memoryOverlay">
+
+<h3>Our Favourite Day ✨</h3>
+
+</div>
+
+</div>
+
+<div class="memoryCard">
+
+<img src="assets/images/memories/memory3.jpg" alt="Memory 3">
+
+<div class="memoryOverlay">
+
+<h3>Endless Laughs 🌸</h3>
+
+</div>
+
+</div>
+
+<div class="memoryCard">
+
+<img src="assets/images/memories/memory4.jpg" alt="Memory 4">
+
+<div class="memoryOverlay">
+
+<h3>Beautiful You 💖</h3>
+
+</div>
+
+</div>
+
+<div class="memoryCard">
+
+  <img src="assets/images/memories/memory5.jpg" alt="Memory 5">
+
+<div class="memoryOverlay">
+
+<h3>Forever Together 💞</h3>
+
+</div>
+
+</div>
+
+<div class="memoryCard">
+
+<img src="assets/images/memories/memory6.jpg" alt="Memory 6">
+
+<div class="memoryOverlay">
+
+<h3>My Universe 🌌</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- LOVE TIMELINE -->
+<!-- PART 3 STARTS BELOW -->
+<!-- ===================================== -->
+<!-- LOVE TIMELINE -->
+<!-- ===================================== -->
+
+<section id="loveTimeline">
+
+<div class="container">
+
+<div class="sectionHeading">
+
+<span>💫 OUR STORY</span>
+
+<h2>
+
+Every Memory
+
+<strong>Became A Chapter</strong>
+
+</h2>
+
+<p>
+
+Every chapter of our journey
+deserves to be remembered forever.
+
+</p>
+
+</div>
+
+<div class="timeline">
+
+<div class="timelineItem left">
+
+<div class="timelineDot">
+❤️
+</div>
+
+<div class="timelineContent">
+
+<span>Chapter 01</span>
+
+<h3>The First Hello</h3>
+
+<p>
+
+The day everything quietly began,
+without either of us knowing
+how special it would become.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timelineItem right">
+
+<div class="timelineDot">
+🌸
+</div>
+
+<div class="timelineContent">
+
+<span>Chapter 02</span>
+
+<h3>First Beautiful Memory</h3>
+
+<p>
+
+A moment that still feels
+just as magical every time
+I think about it.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timelineItem left">
+
+<div class="timelineDot">
+📸
+</div>
+
+<div class="timelineContent">
+
+<span>Chapter 03</span>
+
+<h3>Favourite Photograph</h3>
+
+<p>
+
+One photograph.
+Thousands of emotions.
+Infinite happiness.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timelineItem right">
+
+<div class="timelineDot">
+✨
+</div>
+
+<div class="timelineContent">
+
+<span>Chapter 04</span>
+
+<h3>Still Writing...</h3>
+
+<p>
+
+And this story...
+is only getting
+more beautiful every day.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- LOVE CONSTELLATION -->
+<!-- ===================================== -->
+
+<section id="constellation">
+
+<div class="container">
+
+<div class="sectionHeading">
+
+<span>🌠 CONSTELLATION</span>
+
+<h2>
+
+Written
+
+<strong>In The Stars</strong>
+
+</h2>
+
+<p>
+
+If memories became stars...
+our sky would never be dark.
+
+</p>
+
+</div>
+
+<div class="constellationBox">
+
+<div class="orbit orbit1"></div>
+
+<div class="orbit orbit2"></div>
+
+<div class="orbit orbit3"></div>
+
+<div class="centerHeart">
+❤️
+</div>
+
+<div class="planet p1"></div>
+
+<div class="planet p2"></div>
+
+<div class="planet p3"></div>
+
+<div class="planet p4"></div>
+
+<div class="planet p5"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- LOVE STATS -->
+<!-- ===================================== -->
+
+<section id="loveStats">
+
+<div class="container">
+
+<div class="sectionHeading">
+
+<span>💖 LOVE STATS</span>
+
+<h2>
+
+Some Numbers
+
+<strong>Mean Everything</strong>
+
+</h2>
+
+</div>
+
+<div class="statsGrid">
+
+<div class="statCard">
+
+<h2>∞</h2>
+
+<p>Beautiful Memories</p>
+
+</div>
+
+<div class="statCard">
+
+<h2>365</h2>
+
+<p>Reasons To Smile</p>
+
+</div>
+
+<div class="statCard">
+
+<h2>24×7</h2>
+
+<p>Thinking About You</p>
+
+</div>
+
+<div class="statCard">
+
+<h2>Forever</h2>
+
+<p>My Favourite Person</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- 28 REASONS -->
+<!-- PART 4 STARTS BELOW -->
+  <!-- ===================================== -->
+<!-- 28 REASONS -->
+<!-- ===================================== -->
+
+<section id="reasonsUniverse">
+
+<div class="container">
+
+<div class="sectionHeading">
+
+<span>❤️ 28 REASONS</span>
+
+<h2>
+
+Twenty Eight Reasons
+
+<strong>Why I Love You</strong>
+
+</h2>
+
+<p>
+
+One click...
+One beautiful reason...
+Again and again.
+
+</p>
+
+</div>
+
+<div class="reasonCard">
+
+<div class="reasonIcon">
+
+❤️
+
+</div>
+
+<h3 id="reasonTitle">
+
+Reason #1
+
+</h3>
+
+<p id="reasonText">
+
+Press the button below
+to reveal the first reason.
+
+</p>
+
+<button id="nextReason">
+
+Reveal Next Reason
+
+<i class="fa-solid fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- GIFT UNIVERSE -->
+<!-- ===================================== -->
+
+<section id="giftUniverse">
+
+<div class="container">
+
+<div class="sectionHeading">
+
+<span>🎁 GIFT UNIVERSE</span>
+
+<h2>
+
+Five Gifts
+
+<strong>Made Just For You</strong>
+
+</h2>
+
+<p>
+
+Each gift hides
+a small surprise.
+
+</p>
+
+</div>
+
+<div class="giftGrid">
+
+<div class="giftCard" data-gift="1">
+
+<div class="giftEmoji">🎁</div>
+
+<h3>Gift One</h3>
+
+</div>
+
+<div class="giftCard" data-gift="2">
+
+<div class="giftEmoji">🌸</div>
+
+<h3>Gift Two</h3>
+
+</div>
+
+<div class="giftCard" data-gift="3">
+
+<div class="giftEmoji">💌</div>
+
+<h3>Gift Three</h3>
+
+</div>
+
+<div class="giftCard" data-gift="4">
+
+<div class="giftEmoji">💖</div>
+
+<h3>Gift Four</h3>
+
+</div>
+
+<div class="giftCard finalGift"
+data-gift="5">
+
+<div class="giftEmoji">🎂</div>
+
+<h3>Final Surprise</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- GIFT MODAL -->
+<!-- ===================================== -->
+
+<div id="giftModal">
+
+<div class="modalOverlay"></div>
+
+<div class="giftWindow">
+
+<button id="closeGift">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+<div id="giftEmoji">
+
+🎁
+
+</div>
+
+<h2 id="giftHeading">
+
+Gift
+
+</h2>
+
+<p id="giftContent">
+
+Your surprise
+will appear here.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================== -->
+<!-- SECRET SIGNAL -->
+<!-- ===================================== -->
+
+<section id="secretSignal">
+
+<div class="container">
+
+<div class="secretCard">
+
+<div class="secretIcon">
+
+🌌
+
+</div>
+
+<h2>
+
+Secret Signal
+
+</h2>
+
+<p>
+
+Some messages
+can only be unlocked
+by someone truly special.
+
+</p>
+
+<button id="unlockSignal">
+
+Unlock Secret
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- COSMIC LETTER -->
+<!-- ===================================== -->
+
+<section id="cosmicLetter">
+
+<div class="container">
+
+<div class="sectionHeading">
+
+<span>💌 COSMIC LETTER</span>
+
+<h2>
+
+A Letter
+
+<strong>Across The Universe</strong>
+
+</h2>
+
+<p>
+
+Some feelings deserve
+more than a simple message.
+
+</p>
+
+</div>
+
+<div id="letterEnvelope">
+
+<div class="envelopeFront">
+
+<div class="waxSeal">
+
+❤️
+
+</div>
+
+</div>
+
+<div class="envelopeLetter">
+
+<div class="letterPaper">
+
+<h2>
+
+Happy Birthday Bubu ❤️
+
+</h2>
+
+<div id="typeWriterText">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<button id="openLetter">
+
+Open Letter
+
+<i class="fa-solid fa-envelope-open"></i>
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- MEMORY BOOK -->
+<!-- PART 5 STARTS BELOW -->
+  <!-- ===================================== -->
+<!-- MEMORY BOOK -->
+<!-- ===================================== -->
+
+<section id="memoryBook">
+
+<div class="container">
+
+<div class="sectionHeading">
+
+<span>📖 MEMORY BOOK</span>
+
+<h2>
+
+Every Page
+
+<strong>Holds A Memory</strong>
+
+</h2>
+
+<p>
+
+Some memories fade...
+Ours only become more beautiful.
+
+</p>
+
+</div>
+
+<div class="bookGrid">
+
+<div class="bookCard">
+
+<img src="assets/images/memories/memory7.jpg" alt="Memory 7">
+
+<h3>Chapter One</h3>
+
+<p>
+The beginning of something unforgettable.
+</p>
+
+</div>
+
+<div class="bookCard">
+
+<img src="assets/images/memories/memory8.jpg" alt="Memory 8">
+
+<h3>Chapter Two</h3>
+
+<p>
+Every smile became another beautiful page.
+</p>
+
+</div>
+
+<div class="bookCard">
+
+<img src="assets/images/memories/memory9.jpg" alt="Memory 9">
+
+<h3>Chapter Three</h3>
+
+<p>
+Another chapter...
+Another beautiful memory.
+</p>
+
+</div>
+
+<div class="bookCard">
+
+<img src="assets/images/memories/memory10.jpg" alt="Memory 10">
+
+<h3>Chapter Four</h3>
+
+<p>
+Our story still continues...
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- PHOTO CONSTELLATION -->
+<!-- ===================================== -->
+
+<section id="photoConstellation">
+
+<div class="container">
+
+<div class="sectionHeading">
+
+<span>📸 PHOTO CONSTELLATION</span>
+
+<h2>
+
+Every Picture
+
+<strong>Shines Like A Star</strong>
+
+</h2>
+
+</div>
+
+<div class="photoGrid">
+
+<img src="assets/images/priyal/priyal1.jpg">
+  
+<img src="assets/images/priyal/priyal2.jpg">
+
+<img src="assets/images/priyal/priyal3.jpg">
+  
+<img src="assets/images/priyal/priyal4.jpg">
+
+<img src="assets/images/priyal/priyal5.jpg">
+  
+<img src="assets/images/priyal/priyal6.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- PROMISE -->
+<!-- ===================================== -->
+
+<section id="promiseGalaxy">
+
+<div class="container">
+
+<div class="promiseCard">
+
+<div class="promiseHeart">
+
+❤️
+
+</div>
+
+<h2>
+
+One Promise...
+
+</h2>
+
+<p>
+
+No matter where life takes us...
+
+I hope your smile always remains
+just as beautiful as the day
+I first saw it.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- BIRTHDAY FINALE -->
+<!-- ===================================== -->
+
+<section id="birthdayFinale">
+
+<canvas id="fireworksCanvas"></canvas>
+
+<div class="container">
+
+<div class="sectionHeading">
+
+<span>
+
+🎂 THE BIG MOMENT
+
+</span>
+
+<h2>
+
+Happy Birthday
+
+<strong>
+
+Shonuliii ❤️
+
+</strong>
+
+</h2>
+
+<p>
+
+Close your eyes...
+
+Make a wish...
+
+Let the universe celebrate you.
+
+</p>
+
+</div>
+
+<div class="cakeArea">
+
+<div id="birthdayCake">
+
+<div class="cakeShadow"></div>
+
+<div class="cakeBottom"></div>
+
+<div class="cakeMiddle"></div>
+
+<div class="cakeTop"></div>
+
+<div class="candles">
+
+<div class="candle"></div>
+<div class="candle"></div>
+<div class="candle"></div>
+<div class="candle"></div>
+<div class="candle"></div>
+
+</div>
+
+</div>
+
+<button id="blowCandles">
+
+<i class="fa-solid fa-wind"></i>
+
+Blow The Candles
+
+</button>
+
+</div>
+
+<div class="balloonContainer">
+
+<div class="balloon red"></div>
+
+<div class="balloon pink"></div>
+
+<div class="balloon purple"></div>
+
+<div class="balloon gold"></div>
+
+<div class="balloon blue"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- FINAL MESSAGE -->
+<!-- PART 6 STARTS BELOW -->
+  <!-- ===================================== -->
+<!-- FINAL MESSAGE -->
+<!-- ===================================== -->
+
+<section id="finalMessage">
+
+<div class="container">
+
+<div class="finalGlass">
+
+<div class="finalHeart">
+
+❤️
+
+</div>
+
+<h2>
+
+Thank You For Existing
+
+</h2>
+
+<p>
+
+Among billions of stars...
+
+the brightest one
+will always be you.
+
+Thank you for every smile,
+every memory,
+every laugh,
+and every beautiful moment.
+
+</p>
+
+<p>
+
+May this birthday be filled
+with happiness,
+good health,
+beautiful surprises,
+and dreams that all come true.
+
+</p>
+
+<h3>
+
+Happy Birthday,
+Bugguliii ❤️
+
+</h3>
+
+<span>
+
+Forever Yours,
+
+Kshitij ❤️
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- SCROLL TO TOP -->
+<!-- ===================================== -->
+
+<button
+id="scrollTop"
+aria-label="Scroll To Top">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- ===================================== -->
+<!-- FOOTER -->
+<!-- ===================================== -->
+
+<footer id="footer">
+
+<div class="container">
+
+<h2>
+
+Project Stardust ∞
+
+</h2>
+
+<p>
+
+Made with ❤️
+
+Designed,
+developed
+and dedicated
+to one beautiful person.
+
+</p>
+
+<div class="footerIcons">
+
+<a href="#" aria-label="Heart">
+
+<i class="fa-solid fa-heart"></i>
+
+</a>
+
+<a href="#" aria-label="Star">
+
+<i class="fa-solid fa-star"></i>
+
+</a>
+
+<a href="#" aria-label="Gift">
+
+<i class="fa-solid fa-gift"></i>
+
+</a>
+
+</div>
+
+<p class="copyright">
+
+© 2026 Project Stardust
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- ===================================== -->
+<!-- AUDIO EFFECTS -->
+<!-- ===================================== -->
+
+<audio
+id="fireworkSound"
+preload="auto">
+
+<source
+src="music/fireworks.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<audio
+id="popSound"
+preload="auto">
+
+<source
+src="music/pop.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<!-- ===================================== -->
+<!-- SCRIPT -->
+<!-- ===================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+  
